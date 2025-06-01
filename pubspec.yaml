@@ -1,0 +1,46 @@
+name: Cronus
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.7.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  audioplayers: ^5.1.0
+  cupertino_icons: ^1.0.8
+ 
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1  # Adicione esta linha
+
+# Configuração do flutter_launcher_icons
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+  adaptive_icon_background: "#000000"
+  adaptive_icon_foreground: "assets/icon/app_icon_foreground.png"
+  web:
+    generate: false
+  windows:
+    generate: false
+  macos:
+    generate: false
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/sounds/inicio_treino.mp3
+    - assets/sounds/contagem_segundos.mp3
+    - assets/sounds/inicio_descanso.mp3
+    - assets/sounds/final_parabens.mp3
+    - assets/icon/
